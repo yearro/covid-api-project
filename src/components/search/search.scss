@@ -1,0 +1,17 @@
+.search-container {
+  max-width: 600px;
+  margin: 0 auto;
+
+  &_countries {
+    display: flex;
+    padding: 0.5rem;
+    flex-wrap: wrap;
+
+    button {
+      margin: 0.4rem;
+    }
+  }
+}
+.hero {
+    margin-bottom: 1rem;
+}

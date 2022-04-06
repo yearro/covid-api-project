@@ -1,0 +1,57 @@
+.information {
+
+  &-container {
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  &-card {
+    border-radius: 20px;
+    width: 30%;
+    box-shadow: 0 4px 12px rgb(0 0 0 / 8%);
+    overflow: auto;
+
+    &-title {
+      text-align: center;
+      padding: 1rem;
+      font-size: 2rem;
+    }
+
+    &-number {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-weight: bold;
+      font-size: 2rem;
+    }
+
+    &-image {
+      height: 120px;
+
+      &_confirmed {
+        background: url('../../assets/confirmed.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &_deaths {
+        background: url('../../assets/luto.png');
+        background-size: cover;
+        background-position: center;
+      }
+
+      &_recovered {
+        background: url('../../assets/recupered.jpeg');
+        background-size: cover;
+        background-position: center;
+      }
+    }
+  }
+
+  @media (max-width: 500px) {
+    &-card {
+      width: 90%;
+    }
+  }
+}
