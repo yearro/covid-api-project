@@ -31,9 +31,9 @@ function App() {
               <ByCountry />
             </CountryContextProvider>
           } />
-          <Route path="/404" element={<NotFound />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/aboutUs" element={<AboutUs />} />
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>
       <Footer />

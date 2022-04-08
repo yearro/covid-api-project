@@ -1,6 +1,6 @@
 import React from "react";
 import styled from 'styled-components';
-import imgLogo from '../images/logo-covid-api.jpg'
+import imgLogo from '../assets/logo-covid-api.jpg'
 
 const Link = ({ className, children }) => (
   <a href='/' className={className}>
