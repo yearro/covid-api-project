@@ -20,6 +20,7 @@ const ContactForm = () => {
   }
   const handlerShowForm = () => {
     setShowForm(!showForm)
+    handlerCancel()
   }
   return(
     <> {

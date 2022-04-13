@@ -1,11 +1,11 @@
 import React from 'react';
 import ContactForm from '../components/contactForm/contactForm';
+import ContactInfo from '../components/contactInformation'
+
 const Contact = () => (
   <div className='columns'>
     <div className='column is-half'>
-      <p className='bd-notification is-primary'>
-        <code className='html'>is-half</code>
-      </p>
+      <ContactInfo />
     </div>
     <div className='column is-half'>
       <ContactForm />
