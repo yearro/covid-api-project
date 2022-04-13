@@ -1,7 +1,14 @@
-import React from "react";
+import React from 'react';
 const AboutUs = () => (
-  <div>
-    Sobre nosotros
+  <div className='columns'>
+    <div className='column is-half'>
+      <p className='bd-notification is-primary'>
+        <code className='html'>is-half</code>
+      </p>
+    </div>
+    <div className='column is-half'>
+      
+    </div>
   </div>
 )
 

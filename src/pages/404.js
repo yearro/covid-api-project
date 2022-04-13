@@ -6,7 +6,7 @@ const NotFound = () => {
       <div className='message-body'>
       <h2 className='title is-2'>We are sorry ! ! !</h2>
       <h3 className='title is-3'>We can't find what you are looking for</h3>
-      <img src={dogImage} alt='Not found image' width='400px' height='400px'/>
+      <img src={dogImage} alt='Not found' width='400px' height='400px'/>
       </div>
     </article>
   )

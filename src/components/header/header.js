@@ -11,12 +11,12 @@ const Header = () => (
       </div>
       <div>
         <div className='buttons'>
-          <Link to="/contact" className="button is-danger">
-            <strong>Contact</strong>
-          </Link>
-          <Link to="/aboutUs" className="button is-danger">
+         <Link to="/aboutUs" className="button is-danger">
             <strong>About us</strong>
           </Link>
+          <Link to="/contact" className="button is-danger">
+            <strong>Contact</strong>
+          </Link> 
         </div>
       </div>
     </nav>
