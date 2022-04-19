@@ -3,10 +3,10 @@ import { Routes, Route } from 'react-router-dom'
 
 import Header from './components/header/header'
 import Footer from './components/footer'
+import Spinner from './components/spinner/spinner'
 
 import GeneralContextProvider from './contexts/GeneralContext'
 import CountryContextProvider from './contexts/CountryContext'
-
 
 const Home = lazy (() => import('./pages/Home'))
 const NotFound = lazy (() => import('./pages/404'))
@@ -18,13 +18,16 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Suspense fallback={<div>Loading...</div>}>
+      <Suspense fallback={
+          <div>
+            <Spinner />
+          </div>
+        }>
         <Routes>
           <Route path="/" element={
             <GeneralContextProvider>
               <Home />
             </GeneralContextProvider>
-          
           } />
           <Route path="/:slug/country" element={
             <CountryContextProvider>
