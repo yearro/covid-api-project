@@ -29,13 +29,13 @@ function App() {
               <Home />
             </GeneralContextProvider>
           } />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="/:slug/country" element={
             <CountryContextProvider>
               <ByCountry />
             </CountryContextProvider>
           } />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/aboutUs" element={<AboutUs />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Suspense>

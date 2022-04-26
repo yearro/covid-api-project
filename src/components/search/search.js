@@ -23,7 +23,7 @@ const Search = ({
   , [])
 
   const redirectCountry = (countrySlug) => {
-    window.location.href = `/${countrySlug}/country`
+    window.location.href = `/#/${countrySlug}/country`
   }
 
   return (
